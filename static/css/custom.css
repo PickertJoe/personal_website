@@ -1,20 +1,124 @@
 
 {% load staticfiles %}
-
+html  *{
+    font-family: "Times New Roman" !important;
+    overflow: hidden;
+}
 
 body {
     background-image: url("../images/snow.jpg");
     background-size: cover;
+
 
 }
 .navbar-default{
     background-color: #CC0000 !important;
 }
 
-.nav-item{
-    color: #FFF;
+.nav-link{
+    color: white;
+    font-family: "Times New Roman";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 25px;
+}
+
+.navbar-brand{
+    color:white;
+    font-family: "Times New Roman";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+
+}
+
+.navbar{
+    background-image: url('../images/textured_black.jpg');
+    background-size: auto;
 }
 
 .col-9{
-    background-color: #FFF
+    background-color: white;
+}
+
+.col-3{
+    background-color: white;
+    left: 20px;
+}
+
+.blog-sidebar{
+    background-color: white !important;
+}
+
+h1{
+    text-align: center;
+}
+
+/*
+Keyframes
+*/
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+CSS Page Transitions
+*/
+.m-scene {
+    .scene_element{
+        animation-duration: 0.25s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+
+    .scene_element--fadein{
+        animation-name: fadeIn;
+    }
+}
+
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../images/Pro.jpg");
+    backg
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("../images/body2.jpg");
+    z-index: 2;
+    position: relative;
+}
+.par-container {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 960px;
+    background: #f9f9f9;
+    font-size: 24px;
+}
+
+.parallax{
+    background: url('../images/Pro.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
 }
