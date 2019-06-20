@@ -6,9 +6,14 @@
   <!--Produced by Sergey Pozhilov. Massive thanks to him for his help-->
 
   {% load staticfiles %}
+<<<<<<< HEAD
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <!--Custom stylesheet-->
   <link rel="stylesheet" href="{% static 'css/custom.css' %}" type='text/css' />
+=======
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/css/custom.css" type='text/css' />
+>>>>>>> parent of 97c2383... Added about me; split base template into two sections
 
   <!--Custom shortcut icon-->
   <link rel="shortcut icon" href="static/images/snow.jpg">
@@ -19,7 +24,28 @@
 
 </head>
 
+<<<<<<< HEAD
 <body class="theme-invert">
+=======
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'project_index' %}">Project Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+>>>>>>> parent of 97c2383... Added about me; split base template into two sections
 
 <nav class="mainmenu">
   <div class="container">
@@ -66,6 +92,7 @@
 <!-- Second (About) section -->
 <section class="section" id="about">
   <div class="container">
+<<<<<<< HEAD
 
     <h2 class="text-center title">About me</h2>
     <div class="row">
@@ -144,6 +171,9 @@
   <div class="container">
 
     <h2 class="text-center title">Get in touch</h2>
+=======
+    {% block page_content %}
+>>>>>>> parent of 97c2383... Added about me; split base template into two sections
 
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -161,6 +191,7 @@
   </div>
 </section>
 
+<<<<<<< HEAD
 
 <!-- Load js libs only when the page is loaded. -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -168,5 +199,12 @@
 <script src="static/js/modernizr.custom.72241.js"></script>
 <!-- Custom template scripts -->
 <script src="static/js/magister.js"></script>
+=======
+    {% endblock %}
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+>>>>>>> parent of 97c2383... Added about me; split base template into two sections
 </body>
 </html>
