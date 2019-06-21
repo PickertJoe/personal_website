@@ -2,7 +2,6 @@
 {% load staticfiles %}
 html  *{
     font-family: "Times New Roman" !important;
-    overflow: hidden;
 }
 
 body {
@@ -10,6 +9,14 @@ body {
     background-size: cover;
 
 
+}
+
+a{
+    color:#2A293E;
+}
+
+h2{
+    color:black;
 }
 .navbar-default{
     background-color: #CC0000 !important;
@@ -36,12 +43,15 @@ body {
 }
 
 .col-9{
-    background-color: white;
+    background-color: #9F9C99;
+    outline: 2px solid black;
+
 }
 
 .col-3{
-    background-color: white;
-    left: 20px;
+    background-color: #2A293E;
+    outline: 2px solid black;
+    color: white;
 }
 
 .blog-sidebar{
@@ -116,9 +126,51 @@ CSS Page Transitions
     font-size: 24px;
 }
 
-.parallax{
+.parallax-1{
     background: url('../images/Pro.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-2{
+    background: url('../images/C++.png') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-3{
+    background: url('../images/research.png') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-4{
+    background: url('../images/stream.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-5{
+    background: url('../images/climbing.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-6{
+    background: url('../images/mtb.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-7{
+    background: url('../images/runescape.png') no-repeat center;
+    background-size: contain;
     background-attachment: fixed;
     height: 500px;
 }
