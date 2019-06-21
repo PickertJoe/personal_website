@@ -15,11 +15,19 @@ a{
     color:#2A293E;
 }
 
+h1{
+    text-align: center;
+}
 h2{
     color:black;
+    font-size: 30px;
 }
-.navbar-default{
-    background-color: #CC0000 !important;
+
+h3{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    padding-top: 100px;
 }
 
 .nav-link{
@@ -37,10 +45,6 @@ h2{
 
 }
 
-.navbar{
-    background-image: url('../images/textured_black.jpg');
-    background-size: auto;
-}
 
 .col-9{
     background-color: #9F9C99;
@@ -54,13 +58,6 @@ h2{
     color: white;
 }
 
-.blog-sidebar{
-    background-color: white !important;
-}
-
-h1{
-    text-align: center;
-}
 
 /*
 Keyframes
