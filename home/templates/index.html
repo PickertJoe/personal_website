@@ -7,14 +7,31 @@
 {% load staticfiles %}
 <title>Home</title>
 
+
 <body>
 
-<div class='container homepage'>
+
+
+<div class='container homepage' id='welcome'>
     <span class="text1">Welcome</span>
     <span class="text1">I'm Joe Pickert, and this is my website</span>
     <span class='text2'>Feel free to explore my projects, blog, and other personal information</span>
+    <br><br><br><br>
+    <span class='text3'>Or, if you'd just like to enjoy this picture I snapped from the summit of Mt.
+        Elbert (14,433'), just click below:<br>
+        <button onclick='toggle_visibility()'>Hide</button>
+    </span>
 </div>
 
+<script type='text/javascript'>
+    function toggle_visibility() {
+        var e = document.getElementById('welcome');
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
+</script>
 
 </body>
 

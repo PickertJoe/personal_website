@@ -50,6 +50,17 @@ body {
     animation-delay: 4s;
 }
 
+.text3{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
 .blog-detail{
     background-color: white !important;
     font-size: 18px;
@@ -169,7 +180,7 @@ CSS Page Transitions
     margin: 0 auto;
     padding: 25px;
     max-width: 960px;
-    background: #f9f9f9;
+    background: #9F9C99;
     font-size: 24px;
 }
 
@@ -182,9 +193,11 @@ CSS Page Transitions
 
 .parallax-2{
     background: url('../images/C++.png') no-repeat center;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+    margin:auto;
     height: 500px;
+
 }
 
 .parallax-3{
@@ -216,7 +229,21 @@ CSS Page Transitions
 }
 
 .parallax-7{
+    background: url('../images/violin.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-8{
     background: url('../images/runescape.png') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-9{
+    background: url('../images/mtb.jpg') no-repeat center;
     background-size: contain;
     background-attachment: fixed;
     height: 500px;
