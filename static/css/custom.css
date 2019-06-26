@@ -12,11 +12,20 @@ body {
 
 .homepage{
     text-align: center;
+    color: white;
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+
+.btn-link{
+    color:white;
+}
+
+.contact{
+    background-color: grey !important;
 }
 
 .container span{
@@ -182,6 +191,8 @@ CSS Page Transitions
     max-width: 960px;
     background: white;
     font-size: 24px;
+    background-color: #9F9C99;
+    outline: 2px solid black;
 }
 
 .parallax-1{
