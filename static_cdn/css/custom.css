@@ -1,0 +1,257 @@
+
+{% load staticfiles %}
+html  *{
+    font-family: "Times New Roman" !important;
+}
+
+body {
+    background-image: url("../images/snow.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homepage{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container span{
+    color:white;
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 1s;
+
+}
+
+.text2{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.text3{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.blog-detail{
+    background-color: white !important;
+    font-size: 18px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+a{
+    color:#2A293E;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    color:black;
+    font-size: 30px;
+}
+
+h3{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.nav-link{
+    color: white;
+    font-family: "Times New Roman";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 25px;
+}
+
+.navbar-brand{
+    color:white;
+    font-family: "Times New Roman";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+
+}
+
+
+.col-9{
+    background-color: #9F9C99;
+    outline: 2px solid black;
+
+}
+
+.col-3{
+    background-color: #2A293E;
+    outline: 2px solid black;
+    color: white;
+}
+
+
+/*
+Keyframes
+*/
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+CSS Page Transitions
+*/
+.m-scene {
+    .scene_element{
+        animation-duration: 0.25s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+
+    .scene_element--fadein{
+        animation-name: fadeIn;
+    }
+}
+
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("../images/Pro.jpg");
+    backg
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("../images/body2.jpg");
+    z-index: 2;
+    position: relative;
+}
+.par-container {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 960px;
+    background: white;
+    font-size: 24px;
+}
+
+.parallax-1{
+    background: url('../images/Pro.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-2{
+    background: url('../images/C++.png') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    margin:auto;
+    height: 500px;
+
+}
+
+.parallax-3{
+    background: url('../images/research.png') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-4{
+    background: url('../images/stream.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-5{
+    background: url('../images/climbing.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-6{
+    background: url('../images/mtb.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-7{
+    background: url('../images/violin.jpg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-8{
+    background: url('../images/runescape.png') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-9{
+    background: url('../images/books.jpeg') no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.parallax-10{
+    background: url('../images/signature.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+}
