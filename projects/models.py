@@ -8,4 +8,7 @@ class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     technology = models.CharField(max_length=200)
-    image = models.FilePathField(path='static/images', default='/images/snow.jpg')
+    image = models.FilePathField(path='static/images/', default='static/images/pro.jpg')
+
+    def __str__(self):
+        return self.title

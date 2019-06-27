@@ -69,7 +69,8 @@ body {
     font-weight: 700;
     opacity: 0;
     color:white;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;    animation: fadein forwards;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
     animation-duration: 3s;
     animation-delay: 4s;
 }
@@ -196,9 +197,12 @@ CSS Page Transitions
 }
 .par-container {
     margin: 0 auto;
+    color: white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
     padding: 25px;
     max-width: 960px;
-    background: white;
+    background-image: url('../images/Black_marble.jpg');
+    background-size: contain;
     font-size: 24px;
     background-color: #9F9C99;
     outline: 2px solid black;
