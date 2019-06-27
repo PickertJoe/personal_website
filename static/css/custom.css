@@ -22,10 +22,10 @@ body {
 
 .btn-link{
     color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
-
-.contact{
-    background-color: grey !important;
+.col-sm{
+    color: white !important;
 }
 
 .container span{
@@ -91,6 +91,7 @@ h1{
 h2{
     color:black;
     font-size: 30px;
+    padding-top: 100px;
 }
 
 h3{
