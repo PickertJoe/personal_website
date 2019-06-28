@@ -36,6 +36,10 @@ body {
     color:white;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
+
+.btn-link2{
+    color:black;
+}
 .col-sm{
     color: white !important;
 }
@@ -46,7 +50,10 @@ body {
     display: block;
 }
 
-
+.button1{
+    background-color: black;
+    color: white;
+}
 
 .card-text{
     color:black !important;
@@ -95,9 +102,10 @@ body {
 }
 
 .project-detail {
-    background-image: url("../images/grey_slate.jpg") !important;
-    color: white;
+    background-color: white !important;
+    color: black;
     font-size: 20px;
+    border: 2px solid black;
 }
 
 
@@ -118,6 +126,7 @@ h1{
 h2{
     color:black;
     font-size: 30px;
+    text-align: center;
 }
 
 h3{
@@ -152,13 +161,13 @@ h4{
 
 .col-9{
     background-color: #9F9C99;
-    outline: 2px solid black;
+    border: 2px solid black;
 
 }
 
 .col-3{
     background-color: #2A293E;
-    outline: 2px solid black;
+    border: 2px solid black;
     color: white;
 }
 
@@ -197,44 +206,18 @@ CSS Page Transitions
     }
 }
 
-.parallax-wrapper {
-    width: 100vw;
-    height:100vh;
-    padding-top:20vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-}
-.parallax-wrapper::before {
-    content:"";
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-    background-image: url("../images/Pro.jpg");
-    backg
-    position: absolute;
-    z-index: -1;
-    transform:translateZ(-1px) scale(2);
-}
-.regular-wrapper {
-    width: 100vw;
-    height:100vh;
-    padding-top:20vh;
-    background-image: url("../images/body2.jpg");
-    z-index: 2;
-    position: relative;
-}
 .par-container {
     margin: 0 auto;
-    color: white;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    color: black;
+    /*text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;*/
     padding: 25px;
     max-width: 960px;
-    background-image: url('../images/grey_slate.jpg');
+    background-color:white;
+    /*background-image: url('../images/grey_slate.jpg');*/
     background-size: contain;
     font-size: 24px;
     background-color: #9F9C99;
-    outline: 2px solid black;
+    border: 2px solid black;
 }
 
 .parallax-1{
@@ -248,7 +231,6 @@ CSS Page Transitions
     background: url('../images/C++.png') no-repeat center;
     background-size: contain;
     background-attachment: fixed;
-    margin:auto;
     height: 500px;
 
 }

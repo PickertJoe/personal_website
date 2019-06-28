@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from blog.models import Post, Comment
+from blog.models import Post, Comment, Category
 from blog.forms import CommentForm
 from django.core.paginator import Paginator
 
@@ -17,10 +17,13 @@ def blog_index(request):
 
 
 def blog_category(request, category):
-    posts = Post.objects.filter(
-        categories_name_contains=category
-    ).order_by(
-        '-created_on')
+    posts = Post.objects.filter(categories_name_contains=category).order_by(
+        '-created_on'
+    )
+    paginator = Paginator(posts, 5)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+
     context = {
         'category': category,
         'posts': posts}
