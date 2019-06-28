@@ -1,13 +1,17 @@
 from django.shortcuts import render
 from blog.models import Post, Comment
 from blog.forms import CommentForm
-
+from django.core.paginator import Paginator
 
 # Create your views here.
 
 
 def blog_index(request):
     posts = Post.objects.all().order_by('-created_on')
+    paginator = Paginator(posts, 5)
+    page = request.GET.get('page')
+    # ?page=2
+    posts = paginator.get_page(page)
     context = {'posts': posts}
     return render(request, 'blog_index.html', context)
 

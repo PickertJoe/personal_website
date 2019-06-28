@@ -9,6 +9,7 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length=200)
     image = models.ImageField(upload_to='images/')
+    link = models.URLField(default='')
 
     def __str__(self):
         return self.title
