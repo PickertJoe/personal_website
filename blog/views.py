@@ -17,7 +17,7 @@ def blog_index(request):
 
 
 def blog_category(request, category):
-    posts = Post.objects.filter(categories_name_contains=category).order_by(
+    posts = Post.objects.filter(categories__name__contains=category).order_by(
         '-created_on'
     )
     paginator = Paginator(posts, 5)
@@ -27,7 +27,7 @@ def blog_category(request, category):
     context = {
         'category': category,
         'posts': posts}
-    return render(request, 'blog_category.html', context)
+    return render(request, 'blog_categories.html', context)
 
 
 def blog_detail(request, pk):
