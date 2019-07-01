@@ -229,7 +229,7 @@ CSS Page Transitions
     background: url('../images/Pro.jpg') no-repeat center;
     background-size: contain;
     background-attachment: fixed;
-    height: 500px;
+    height: 25em;
 }
 
 .parallax-2{
