@@ -22,14 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'cki9-j408vrhh11w1wxrk%_(%dnl0xb%4-$wd-y#^z((44-jd@'
 import os
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cki9-j408vrhh11w1wxrk%_(%dnl0xb%4-$wd-y#^z((44-jd@')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'ydgr$jd-xsysb8g)2e)szqsg^$qe6l5$%i&g&@@@&nd9f_1-t4')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']
+ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']asgdas
 
 
 # Application definition
