@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '9y%()u7)^rmwmzl))n%tk7mc#=sb^5
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']asgdas
+ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']
 
 
 # Application definition
