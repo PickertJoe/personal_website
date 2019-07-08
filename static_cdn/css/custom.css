@@ -19,14 +19,31 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
 }
+.navbar.solid {
+  background-color: black;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
 
 .blog-container {
     outline: 2px solid black;
 }
 
+.big-link{
+    font-size: 26px !important;
+}
+
+.card-text{
+    color: white !important;
+}
+
 .btn-link{
     color:white;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.btn-link2{
+    color:black;
 }
 .col-sm{
     color: white !important;
@@ -36,6 +53,15 @@ body {
     color:white;
     text-transform: uppercase;
     display: block;
+}
+
+.button1{
+    background-color: black;
+    color: white;
+}
+
+.card-text{
+    color:black !important;
 }
 
 .text1{
@@ -80,6 +106,14 @@ body {
     font-size: 18px;
 }
 
+.project-detail {
+    background-color: white !important;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -91,11 +125,13 @@ a{
 }
 
 h1{
-    text-align: center;
+    text-align: center !important;
+
 }
 h2{
     color:black;
     font-size: 30px;
+    text-align: center !important;
 }
 
 h3{
@@ -103,6 +139,13 @@ h3{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 30px;
     padding-top: 100px;
+}
+
+h4{
+    text-align: center;
+    font-size: 40px;
+    color:white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .nav-link{
@@ -123,13 +166,13 @@ h3{
 
 .col-9{
     background-color: #9F9C99;
-    outline: 2px solid black;
+    border: 2px solid black;
 
 }
 
 .col-3{
     background-color: #2A293E;
-    outline: 2px solid black;
+    border: 2px solid black;
     color: white;
 }
 
@@ -168,58 +211,31 @@ CSS Page Transitions
     }
 }
 
-.parallax-wrapper {
-    width: 100vw;
-    height:100vh;
-    padding-top:20vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-}
-.parallax-wrapper::before {
-    content:"";
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-    background-image: url("../images/Pro.jpg");
-    backg
-    position: absolute;
-    z-index: -1;
-    transform:translateZ(-1px) scale(2);
-}
-.regular-wrapper {
-    width: 100vw;
-    height:100vh;
-    padding-top:20vh;
-    background-image: url("../images/body2.jpg");
-    z-index: 2;
-    position: relative;
-}
 .par-container {
-    margin: 0 auto;
-    color: white;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    margin: auto;
+    color: black;
+    /*text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;*/
     padding: 25px;
     max-width: 960px;
-    background-image: url('../images/Black_marble.jpg');
+    background-color:white;
+    /*background-image: url('../images/grey_slate.jpg');*/
     background-size: contain;
     font-size: 24px;
     background-color: #9F9C99;
-    outline: 2px solid black;
+    border: 2px solid black;
 }
 
 .parallax-1{
     background: url('../images/Pro.jpg') no-repeat center;
     background-size: contain;
     background-attachment: fixed;
-    height: 500px;
+    height: 25em;
 }
 
 .parallax-2{
     background: url('../images/C++.png') no-repeat center;
     background-size: contain;
     background-attachment: fixed;
-    margin:auto;
     height: 500px;
 
 }
