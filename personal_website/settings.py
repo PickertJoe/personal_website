@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'pagedown',
+    'storages',
 
     # Personal Apps
     'projects',
@@ -137,10 +138,19 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
 # Media files (user uploaded files)
 
-MEDIA_URL = 'https://pickert-website-static.s3.amazonaws.com/lu7i2jQnr1nsKqiVt5Ax+iQq1WjgWAyIWF9OiRUw'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+AWS_ACCESS_KEY_ID= os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY= os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME= os.environ.get('AWS_STORAGE_BUCKET_NAME')
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL= None
+
+DEFAULT_FILE_STORAGE= 'storages.backend.s3boto3.S3Boto3Stoage'
