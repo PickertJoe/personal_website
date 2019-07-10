@@ -138,7 +138,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"))
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 MEDIA_URL = STATIC_URL + 'media/'
 STATIC_ROOT = 'staticfiles'
