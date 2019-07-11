@@ -8,6 +8,7 @@ body {
     background-image: url("https://pickert-website-static.s3.us-east-2.amazonaws.com/snow-compressor.jpg");
     background-size: cover;
     background-attachment: fixed;
+    position:relative;
 }
 
 .homepage{
@@ -19,6 +20,22 @@ body {
     height: 80%;
     background-color: black;
 }
+
+#welcome{
+    position:relative;
+}
+
+.open{
+    top:0px !important;
+}
+
+.transition{
+    -webkit-transition: top 0.3s ease-out;
+    -moz-transition: left 0.3s ease-out;
+    -o-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
+}
+
 .navbar.solid {
   background-color: black;
   transition: background-color 1s ease 0s;
@@ -56,6 +73,9 @@ body {
 }
 
 .button1{
+    position: absolute;
+    bottom:0;
+    right:0;
     background-color: black;
     color: white;
 }
