@@ -14,15 +14,15 @@ body {
 .homepage{
     text-align: center;
     color: white;
-    position: relative;
-    top: 0%;
     width: 100%;
     height: 80%;
     background-color: black;
 }
 
-#welcome{
+#slider{
     position:relative;
+    top:0px !important;
+
 }
 
 .open{
@@ -30,10 +30,10 @@ body {
 }
 
 .transition{
-    -webkit-transition: top 0.3s ease-out;
-    -moz-transition: left 0.3s ease-out;
-    -o-transition: left 0.3s ease-out;
-    transition: left 0.3s ease-out;
+    -webkit-transition: top 0.5s ease-out;
+    -moz-transition: top 0.5s ease-out;
+    -o-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
 }
 
 .navbar.solid {
