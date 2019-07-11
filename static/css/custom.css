@@ -13,11 +13,11 @@ body {
 .homepage{
     text-align: center;
     color: white;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 0%;
     width: 100%;
+    height: 80%;
+    background-color: black;
 }
 .navbar.solid {
   background-color: black;
