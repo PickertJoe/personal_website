@@ -21,7 +21,7 @@ body {
 
 #slider{
     position:relative;
-    top:0px !important;
+    top:0px;
 
 }
 
