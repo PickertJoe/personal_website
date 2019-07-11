@@ -8,29 +8,28 @@
 </title>
 <body>
 
-    <div class='container-fluid homepage' id='welcome'>
+    <div class='container-fluid homepage transition' id='slider'>
         <div class='row text1'>
-            <div class='col-8'>
-                Developer
-                Engineer
-                Wilderness First Responder
-                Cycling and Beer Enthusiast
+            <div class='col-8 justify-content-start'>
+                Developer<br/>
+                Engineer<br/>
+                Wilderness First Responder<br/>
+                Cycling and Beer Enthusiast<br/>
             </div>
             <div class='col-4'>
                 <img src="{% static '/images/Pro.jpg' %}" class='img-fluid'>
             </div>
         </div>
-        <div class='row text1'>
+        <div class='row text1 justify-content-start'>
             I'm Joe Pickert, and this is my website.
             <br/><br/>
             Please take some time to explore my projects and personal information.
             <br/><br/>
-            If you'd like to reach out, please <a href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+            If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
         </div>
     </div>
 
     <button class='button1'>Enjoy the view</button>
-    </div>
 
 <!--Helper function to determine 'style' status of the homepage for hide button-->
     <script type='text/javascript'>
