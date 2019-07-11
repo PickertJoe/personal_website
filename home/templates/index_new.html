@@ -10,7 +10,7 @@
 
     <div class='container-fluid homepage transition' id='slider'>
         <div class='row text1'>
-            <div class='col-8 justify-content-start'>
+            <div class='col-8 text-left'>
                 Developer<br/>
                 Engineer<br/>
                 Wilderness First Responder<br/>
@@ -20,12 +20,14 @@
                 <img src="{% static '/images/Pro.jpg' %}" class='img-fluid'>
             </div>
         </div>
-        <div class='row text1 justify-content-start'>
-            I'm Joe Pickert, and this is my website.
-            <br/><br/>
-            Please take some time to explore my projects and personal information.
-            <br/><br/>
-            If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+        <div class='row text1 text-left'>
+            <div class='col-8'>
+                I'm Joe Pickert, and this is my website.
+                <br/><br/>
+                Please take some time to explore my projects and personal information.
+                <br/><br/>
+                If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+            </div>
         </div>
     </div>
 
