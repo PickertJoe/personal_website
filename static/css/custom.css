@@ -10,7 +10,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     position:relative;
-    height: 100%;
 }
 
 .homepage{
@@ -18,23 +17,9 @@ body {
     width: 80%;
     height: 80%;
     background-color: black;
-    position: fixed;
-
-}
-
-#slider{
-    position:relative;
-}
-
-.open{
-    top:-500px% !important;
-}
-
-.transition{
-    -webkit-transition: top 0.5s ease-out;
-    -moz-transition: top 0.5s ease-out;
-    -o-transition: top 0.5s ease-out;
-    transition: top 0.5s ease-out;
+    position: relative;
+    background-image: url('https://pickert-website-static.s3.us-east-2.amazonaws.com/images/woody.jpg');
+    background-size: contain;
 }
 
 .navbar.solid {
@@ -57,7 +42,18 @@ body {
 
 .btn-link{
     color:white;
+    font-size: 1em;
+    font-weight: 700;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.homeimage{
+    padding-top: 1% !important;
+    text-align: center;
+}
+
+.no-margin{
+    margin-bottom: 0px !important;
 }
 
 .btn-link2{
@@ -73,11 +69,16 @@ body {
     display: block;
 }
 
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .button1{
-    position: absolute;
-    bottom:0;
-    right:0;
-    background-color: black;
+    position: relative;
+    top:0;
+    left:0;
+    background-image: url('https://pickert-website-static.s3.us-east-2.amazonaws.com/images/woody.jpg');
     color: white;
 }
 
@@ -86,8 +87,8 @@ body {
 }
 
 .text1{
-    margin-top: 25px;
-    font-size: 2em;
+    margin-top: 3%;
+    font-size: 2.5vw;
     font-weight: 700;
     opacity: 0;
     color:white;
