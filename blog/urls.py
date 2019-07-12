@@ -8,4 +8,4 @@ urlpatterns = [
     path('<int:pk>/', views.blog_detail, name='blog_detail'),
     path('<category>/', views.blog_category, name='blog_category'),
 ]
-#+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

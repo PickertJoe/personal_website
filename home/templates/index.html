@@ -8,46 +8,47 @@
 </title>
 <body>
 
-    <div class='container homepage' id='welcome'>
-        <span class="text1">Welcome</span>
-        <span class="text1">I'm Joe Pickert, and this is my website</span>
-        <span class='text2'>Feel free to explore my projects, blog, and other personal information</span>
-        <br><br><br><br>
-        <span class='text3'>Or, if you'd just like to enjoy this picture I snapped from the <br>
-            summit of Mt.Elbert (14,433'), just click below:<br>
-            <button class='button1' onclick='toggle_visibility()'>Hide</button>
-        </span>
+    <div>
+        <button class='button1' onclick='showHide()'>Show/Hide</button>
     </div>
 
+    <div class='container-fluid homepage transition' id='toggle'>
+        <div class='row text1 no-margin'>
+            <div class='col-6 text-left my-auto'>
+                Developer<br/>
+                Engineer<br/>
+                Wilderness First Responder<br/>
+                Cycling and Beer Enthusiast<br/>
+            </div>
+            <div class='col-6'>
+                <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
+            </div>
+        </div>
+        <div class='row text1 no-margin'>
+            <div class='col-12 text-left'>
+                I'm Joe Pickert, and this is my website.<br/><br/>
+                Please take some time to explore my projects and personal information.<br/>
+                If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+            </div>
+        </div>
+    </div>
+
+
+
 <!--Helper function to determine 'style' status of the homepage for hide button-->
-    <script type='text/javascript'>
-        function getStyle(el, name)
-        {
-            if(document.defaultView && document.defaultView.getComputedStyle)
-            {
-                var style=document.defaultView.getComputedStyle(el, null);
-                if (style)
-                    return style[name];
-            }
-            else if (el.currentStyle)
-                return el.currentStyle[name];
-            return null;
-        }
+<script type="text/javascript">
 
+function showHide() {
+  var x = document.getElementById("toggle");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
+</script>
 
-        function toggle_visibility() {
-            var e = document.getElementById('welcome');
-            if(!e)return true;
-            if(getStyle(e, 'display') == 'none')
-                e.style.display = 'block';
-            else
-                e.style.display = 'none';
-            return true;
-        }
-    </script>
 
 </body>
-
-
 {% endblock %}

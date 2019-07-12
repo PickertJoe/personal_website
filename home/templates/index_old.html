@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+{% block page_content %}
+{% load staticfiles %}
+<title>
+    Joe Pickert
+</title>
+<body>
+
+    <div class='container homepage' id='welcome'>
+        <span class="text1">Welcome</span>
+        <span class="text1">I'm Joe Pickert, and this is my website</span>
+        <span class='text2'>Feel free to explore my projects, blog, and other personal information</span>
+        <br><br><br><br>
+        <span class='text3'>Or, if you'd just like to enjoy this picture I snapped from the <br>
+            summit of Mt.Elbert (14,433'), just click below:<br>
+            <button class='button1' onclick='toggle_visibility()'>Hide</button>
+        </span>
+    </div>
+
+<!--Helper function to determine 'style' status of the homepage for hide button-->
+    <script type='text/javascript'>
+        function getStyle(el, name)
+        {
+            if(document.defaultView && document.defaultView.getComputedStyle)
+            {
+                var style=document.defaultView.getComputedStyle(el, null);
+                if (style)
+                    return style[name];
+            }
+            else if (el.currentStyle)
+                return el.currentStyle[name];
+            return null;
+        }
+
+
+
+        function toggle_visibility() {
+            var e = document.getElementById('welcome');
+            if(!e)return true;
+            if(getStyle(e, 'display') == 'none')
+                e.style.display = 'block';
+            else
+                e.style.display = 'none';
+            return true;
+        }
+    </script>
+
+</body>
+
+
+{% endblock %}
