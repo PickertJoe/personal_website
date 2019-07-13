@@ -7,21 +7,19 @@
 <title>
     {{project.title}}
 </title>
-<body>
-    <h4>{{ project.title }}</h4>
-    <div class="row">
-        <div class="col-md-6">
-            <a href="{{project.link}}"><img src="{{project.image.url}}" alt="" width="100%"></a>
-            <a class='btn-link big-link' href="{% url 'project_index' %}">Back to Portfolio</a>
-        </div>
-        <div class="col-md-5 project-detail">
-            <h2>About the project:</h2>
-            <p class='content-markdown'>{{ project.description }}</p>
-            <br>
-            <h5>Technology used:</h5>
-            <p>{{ project.technology }}</p>
-            <p class='text-center'>*Click image for link to source code*</p>
-        </div>
+<h4>{{ project.title }}</h4>
+<div class="row">
+    <div class="col-md-6">
+        <a href="{{project.link}}"><img src="{{project.image.url}}" alt="" width="100%"></a>
+        <a class='btn-link big-link' href="{% url 'project_index' %}">Back to Portfolio</a>
     </div>
-</body>
+    <div class="col-md-5 project-detail">
+        <h2>About the project:</h2>
+        <p class='content-markdown'>{{ project.description }}</p>
+        <br>
+        <h5>Technology used:</h5>
+        <p>{{ project.technology }}</p>
+        <p class='text-center'>*Click image for link to source code*</p>
+    </div>
+</div>
 {% endblock %}
