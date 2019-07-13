@@ -11,6 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-9 blog-detail">
+                <a class='blog-link' href="{% url 'blog_index' %}">Blog Home</a>
                 <h1 align='center'>{{ post.title }}</h1>
                 <small>
                     {{ post.created_on.date }} |&nbsp;
@@ -47,7 +48,7 @@
                     Hello!</br></br>
                     I'm Joe Pickert, and welcome to my blog.<br><br>
                     Here, you can find a collection of my thoughts both tech-related and otherwise.<br><br>
-                    If you find something that interests you, please leave a comment! I'd love to hear your thoughs and feedback!
+                    If you find something that interests you, please leave a comment! I'd love to hear your thoughts and feedback!
             </div>
         </div>
     </div>

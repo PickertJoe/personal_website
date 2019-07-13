@@ -12,25 +12,22 @@
         <button class='button1' onclick='showHide()'>Show/Hide</button>
     </div>
 
-    <div class='container-fluid homepage transition' id='toggle'>
+    <div class='homepage container' id='toggle'>
         <div class='row text1 no-margin'>
-            <div class='col-7 text-left my-auto'>
+            <div class='col-md-7 text-left my-auto'>
                 Developer<br/>
                 Engineer<br/>
                 Wilderness First Responder<br/>
-                Cycling and Beer Enthusiast<br/>
-            </div>
-            <div class='col-5'>
-                <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
-            </div>
-        </div>
-        <div class='row text1 no-margin'>
-            <div class='col-12 text-left'>
+                Cycling and Beer Enthusiast<br/><br/><br/>
                 I'm Joe Pickert, and this is my website.<br/><br/>
                 Please take some time to explore my projects and personal information.<br/>
                 If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
             </div>
+            <div class='col-md-5'>
+                <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
+            </div>
         </div>
+
     </div>
 
 
