@@ -11,6 +11,43 @@ body {
     position:relative;
 }
 
+a{
+    color:#2A293E;
+}
+
+h1{
+    text-align: center !important;
+    font-size: 2.2em;
+
+}
+h2{
+    color:black;
+    font-size: 1.9em;
+    text-align: center !important;
+}
+
+h3{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.9em;
+    padding-top: 100px;
+}
+
+h4{
+    text-align: center;
+    font-size: 2.3em;
+    color:white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h5{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.1em;
+}
 .homepage{
     color: white;
     width: 80%;
@@ -47,7 +84,8 @@ body {
 
 .homeimage{
     padding-top: 1% !important;
-    text-align: center;
+    text-align: center !important;
+    display:block;
 }
 
 .no-margin{
@@ -70,6 +108,7 @@ body {
 .my-auto{
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: auto;
 }
 
 .button1{
@@ -94,7 +133,18 @@ body {
     animation: fadein forwards;
     animation-duration: 3s;
     animation-delay: 1s;
+}
 
+.about-title{
+    margin-top: 3%;
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
 
 .text2{
@@ -144,34 +194,6 @@ body {
     width: extend-to-zoom;
 }
 
-a{
-    color:#2A293E;
-}
-
-h1{
-    text-align: center !important;
-    font-size: 2.2em;
-
-}
-h2{
-    color:black;
-    font-size: 1.9em;
-    text-align: center !important;
-}
-
-h3{
-    color:white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 1.9em;
-    padding-top: 100px;
-}
-
-h4{
-    text-align: center;
-    font-size: 2.3em;
-    color:white !important;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
 
 .nav-link{
     color: white;
@@ -185,7 +207,6 @@ h4{
     font-size: 1.9em;
 
 }
-
 
 .col-9{
     background-color: #9F9C99;
@@ -217,104 +238,4 @@ Keyframes
     100% {
         opacity: 1;
     }
-}
-
-/*
-CSS Page Transitions
-*/
-.m-scene {
-    .scene_element{
-        animation-duration: 0.25s;
-        transition-timing-function: ease-in;
-        animation-fill-mode: both;
-    }
-
-    .scene_element--fadein{
-        animation-name: fadeIn;
-    }
-}
-
-.par-container {
-    margin: auto;
-    color: black;
-    /*text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;*/
-    padding: 25px;
-    max-width: 960px;
-    background-color:white;
-    /*background-image: url('../images/grey_slate.jpg');*/
-    background-size: contain;
-    font-size: 24px;
-    background-color: #9F9C99;
-    border: 2px solid black;
-}
-
-.parallax-1{
-    background: url('../images/Pro.jpg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 25em;
-}
-
-.parallax-2{
-    background: url('../images/C++.png') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-
-}
-
-.parallax-3{
-    background: url('../images/research.png') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-4{
-    background: url('../images/stream.jpg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-5{
-    background: url('../images/climbing.jpg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-6{
-    background: url('../images/mtb.jpg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-7{
-    background: url('../images/violin.jpg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-8{
-    background: url('../images/runescape.png') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-9{
-    background: url('../images/books.jpeg') no-repeat center;
-    background-size: contain;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-.parallax-10{
-    background: url('../images/signature.jpg') no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 500px;
 }

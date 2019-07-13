@@ -1,143 +1,33 @@
 {% extends 'base.html' %}
 {% block page_content %}
-<a name='top'></a>
+{% load staticfiles %}
 <title>
     About Me
 </title>
-<div class='par-container'>
-    <h1>Who Am I and Why Did I Make a Website?</h1>
-    <div class='parallax-1'>
+<div class='homepage container'>
+    <div class='row text1 no-margin'>
+        <div class='col-sm-6'>
+            <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
+        </div>
+        <div class='col-sm-6 text-left my-auto about-title'>
+            Insatiably Curious<br/>
+            Fanatically Self-driven<br/>
+            Ultimately Verstaile<br/>
+        </div>
     </div>
-        <p>
-        So, why did I create this website? In short, I wanted to test the staying power of my new-found passion
-        for software engineering. I figured that if I could overcome the frustrations of creating something ambitious with
-        little to no prior experience, it would probably bode well for my potential future as a software dev.
-        <br/><br/>
-        Needless to say, I think I might be on to something.
-        <br/><br/>
-        In short, I decided to develop this website from scratch to expand my
-        technical skillset, share a few of my projects in software engineering, and elevate
-        my digital profile.
-        <br/><br/>
-        Although my educational background is primarily in civil/environmental engineering, I've been
-        slowly but steadily building my knowledge base in programming through a mixture of formal classes
-        and rigorous self-study.
-        My first taste of programming came through an introductory computer science course taught in
-        C++. Although I found the language difficult to learn at first, I fell in love with the problem
-        solving and abstract thinking that software engineering demands.
-        <br/><br/>
-        The final project for the course involved creating a library database, which you can find in
-        <a class='btn-link2' href="{% url 'project_index' %}">my project portfolio</a>. All other code
-        I wrote for this course can also be found on my <a class='btn-link2' href='https://github.com/PickertJoe/cplusplus'>Github.</a>
-        I'd highly recommend checking both out!
-       </p>
-    <div class='parallax-2'>
+    <div class='row text1 my-auto'>
+            <br/>From the peaks of Colorado, to the depths of backend software development, I've done a lot of
+            exploring in my young life. I've also worn many different hats.<br/><br/>
+
+            I am an Eagle Scout, a National Merit Scholar, an award winning researcher, a former mountain guide,
+            and an unrepentant bookworm.<br/><br/>
+
+            But the one constant throughout all my endeavours has been my consistent ability to exceed in novel
+            and challenging circumstances.<br/><br/>
+
+            I am a young professional seeking to build on my newfound passion for software engineering through
+            meaningful employment. If you would like to learn more about how my diverse and unique skillset can help you
+            or your business, please<a class='btn-link' href="{% url 'contact' %}">reach out!</a>
     </div>
-        <p>
-        At the same time, I was introduced to data science through my undergraduate research project.
-        Since the fall fo 2017, I've been working with <a class='btn-link2' href='https://www.faculty.ku.edu/~plsullivan/'>Dr. Pam Sullivan</a>
-        here at the University of Kansas to
-        explore the long term ramifications of nitrate contamination in groundwater. Part of this project
-        involved pulling in 1.4 million data points representing nearly two years of groundwater data from
-        nearby wells to contextualize the movement of water (and hence, nitrate) through the subsurface.
-        </p>
-    <div class='parallax-3'>
-    </div>
-        <p>
-        This project has given me invaluable experience in the manipulation and visualization of vast
-        quantities of data. And while I've worked primarily in R throughout this project, I've found that
-        many of the data manipulation skills I've acquired have carried over into my work in Python.
-        <br/><br/>
-        In November of 2018, I was invited to present my research at the national conference of the Geological Society
-        of America in Indianapolis, IN. Besides being a tremendous honor, this opportunity allowed me to meet and swap ideas
-        with geoscientists from around the world. Of particular interest to me was the work that many in the field are doing
-        to refine and develop new scientific models to better understand earth's processes, especially climate change.
-        <br/><br/>
-        A few of the figures I've created through my research can be found in my <a class='btn-link2' href='project_index.html'>project portfolio</a>, and all
-        of my source code in R is of course available on my <a class='btn-link2' href='https://github.com/PickertJoe'>GitHub</a>. The ultimate goal of this study is to be
-        published in a major scientific journal by May of 2020. Stay tuned for future updates!
-        </p>
-    <div class='parallax-4'>
-    </div>
-        <p>
-        Although software engineering has become a major passion of mine, my interests expand far beyond
-        the computer screen! Before going back to school, I spent several years working as a mountain guide
-        in Colorado. While the job was stressful and ever-changing, it marked the fulfillment of a lifelong
-        aspiration for me. After starting out as a complete novice in several of the activities I had to guide,
-        I worked my way up in two years to become the Head Mountain Guide and Climbing Director of Rocky
-        Mountain High Adventure Base.
-        <br/><br/>
-        During my time in management at the Base, I had the immense priviledge of training and growing close to the
-        nine other guides working on my staff. Having the opportunity to teach and lead them as they grew
-        into guides in their own right was an incredibly fulfilling experience, and one that I would like to
-        experience again later in my career.
-    <div class='parallax-5'>
-    </div>
-        <p>
-        And while I may have left my professional guiding days behind, I've carried many of the hobbies and
-        skills that I cultivated there into my current life. To this day, I remain an avid mountain biker and
-        road cyclist, and you can be sure to find me in the mountains whenever a vacation opportunity arises.
-        <br/><br/>
-        Working as a mountain guide also endowed me with a wealth of customer service skills, with one of the
-        most salient being anticipating needs of my clients before they arose. When guiding others in the backcountry, you are
-        responsible not only for the safety of your clients but also for ensuring that they enjoy their trip.
-        With backpacking treks as long as five days, I frequently became close to the people I was guiding. This
-        allowed me to learn much about their individual personalities, and pick up on subtle cues that might
-        indicate the need for a break or a game to pass the time.
-        </p>
-    <div class='parallax-6'>
-    </div>
-        <p>
-        When I'm not on the road or on a trail, I also enjoy playing music from time to time. I started
-        playing the violin when I was 9 years old, and played in my school orchestra all the way through
-        graduation. Since then, I've remained active in a few smaller community orchestras, and have always
-        relished the diverse range of new people that music has allowed me to meet.
-        </p>
-    <div class='parallax-7'>
-    </div>
-        <p>
-        If the weather's poor, or I'm simply too tired to do anything else, one of my favorite ways
-        to unwind after a long day is playing video games. My favorite of all time is probably the MMROPG
-        <a class='btn-link2' href='https://oldschool.runescape.com/'>Old School Runescape</a>. Much like this website, my character in the game is the result of small,
-        consistent increments of progress. Believe it or not, it's actually a
-        revival of a past version of the game I played growing up. Somethings never change, you know?
-        <br/><br/>
-        Aside from Runescape, I also enjoy playing grand strategy games such as anything in the Total War
-        series or some of the historically specific titles made by Paradox Interactive (e.g. Hearts of Iron, Europa Universalis, etc.).
-        </p>
-    <div class='parallax-8'>
-    </div>
-    <p>
-        I'm also a voracious reader, and read anywhere from 20-40 books per year depending on their lengths.
-        My favorite genre has always been historical fiction, though the high fantasy of J.R.R. Tolkien and
-        George R.R. Martin has always held a special place in my heart. My favorite author is Ernest Hemmingway, primarily
-        for his masterpiece <i>For Whom the Bell Tolls</i>. Fyodor Dostoevsky and Leo Tolstoy come in tied
-        for a close second though, as I've always been partial to classical Russian literature.
-        <br/><br/>
-        I'm quite active over on <a class='btn-link2' href='https://www.goodreads.com/user/show/89792207-joe-pickert'>Goodreads.com</a>,
-        and try to give thoughtful reviews for each book that I finish.
-        I've always found the community over there to be very engaging and friendly, and would highly recommend
-        making an account if you're an avid reader or are looking for book suggestions. If you do, definitely be sure
-        to add me as a friend!
-    </p>
-    <div class='parallax-9'>
-    </div>
-        <p>
-        So that, in a nutshell, is who I am. While the projects on my GitHub or the bullet points on my resume
-        might convey my specific, technical skills and expertise, I felt it was important to share the breadth
-        of my experience. In a world of increasing hyper-specialization, I take immense pride in my capabilities and
-        aptitudes as a generalist. Though I may be a relative newcomer to the world of
-        software engineering, the wealt of information avalaible online has played into my greatest strength:
-        my ability to learn rapidly and independently.
-        <br/><br/>
-        If you'd like to know more, or want to know what I can do for you, please don't hesitate to <a href="{% url 'contact' %}">contact me.</a>
-        <br/><br/>
-        Best,
-        </p>
-    <div class='parallax-10'>
-    </div>
-    <center>
-        <a class='btn-link2' href='#top'>Back to Top</a>
-    </center>
 </div>
 {% endblock %}
