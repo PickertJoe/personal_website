@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 {% extends 'base.html' %}
 {% block page_content %}
 {% load staticfiles %}
@@ -26,9 +24,7 @@
             {% endif %}
         </ul>
     </nav>
-
     <div class="row">
-
         <div class="col-9 blog-detail">
 
             <h1>Category: {{category|title}}</h1>
@@ -59,5 +55,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}

@@ -1,49 +1,26 @@
-<!DOCTYPE html>
-
 {% extends 'base.html' %}
 {% block page_content %}
 {% load staticfiles %}
 <title>
     Joe Pickert
 </title>
-
-    <div>
-        <button class='button1' onclick='showHide()'>Show/Hide</button>
-    </div>
-
-    <div class='homepage container' id='toggle'>
-        <div class='row text1 no-margin'>
-            <div class='col-md-5'>
-                <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
-            </div>
-            <div class='col-md-7 order text-left my-auto'>
-                Developer<br/>
-                Engineer<br/>
-                Wilderness First Responder<br/>
-                Cycling and Beer Enthusiast<br/><br/><br/>
-                I'm Joe Pickert, and this is my website.<br/><br/>
-                Please take some time to explore my projects and personal information.<br/>
-                If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
-            </div>
+<div>
+    <button class='button1' onclick='showHide()'>Show/Hide</button>
+</div>
+<div class='homepage container' id='toggle'>
+    <div class='row text1 no-margin'>
+        <div class='col-lg-5'>
+            <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
         </div>
-
+        <div class='col-lg-7 order text-left my-auto'>
+            Developer<br/>
+            Engineer<br/>
+            Wilderness First Responder<br/>
+            Cycling and Beer Enthusiast<br/><br/><br/>
+            I'm Joe Pickert, and this is my website.<br/><br/>
+            Please take some time to explore my projects and personal information.<br/>
+            If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+        </div>
     </div>
-
-
-
-<!--Helper function to determine 'style' status of the homepage for hide button-->
-<script type="text/javascript">
-
-function showHide() {
-  var x = document.getElementById("toggle");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-</script>
-
-
+</div>
 {% endblock %}
