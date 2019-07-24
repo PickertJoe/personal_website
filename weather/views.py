@@ -24,12 +24,11 @@ def weather_index(request):
             'humidity': r['main']['humidity'],
             'description': r['weather'][0]['description'],
             'wind': r['wind']['speed'],
-            'icon': r['weather'][0]['icon'],
         }
 
         weather_data.append(city_weather)
 
     print(weather_data)
 
-    context = {'weather_data': city_weather}
+    context = {'weather_data': weather_data}
     return render(request, 'weather_index.html', context)

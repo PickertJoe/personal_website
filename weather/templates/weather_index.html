@@ -7,19 +7,31 @@
 
 <div class='homepage text1 container'>
     <h1>Curious About the Weather?</h1>
-    <div class='row no-margin'>
-        <div class='col-lg-5'>
-            <img src="{% static '/images/weather_map.jpg' %}" class='img-fluid homeimage'>
-        </div>
-        <div class='col-lg-7 text-left my-auto'>
-            Developer<br/>
-            Engineer<br/>
-            Wilderness First Responder<br/>
-            Cycling and Beer Enthusiast<br/><br/><br/>
-            I'm Joe Pickert, and this is my website.<br/><br/>
-            Please take some time to explore my projects and personal information.<br/>
-            If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
-        </div>
+    <div class='text-center'>
+        Check out the conditions in a few of the cities I'd most like to visit.
     </div>
+    <div class='row no-margin weather-text'>
+        {% for city_weather in weather_data %}
+        <div class='col-md-4'>
+            <div class='card mb-2'>
+                <img class='card-img-top' src="{{city_weather.image.url}}" alt="Image">
+                <div class='card-body'>
+                    <h2 class='card-title'>{{ city_weather.city }}</h2>
+                    <p class='card-text'>{{city_weather.description}}</p>
+                </div>
+                <ul class='list-group list-group-flush'>
+                    <li class='list-group-item'>High: {{city_weather.high_temperature}} ° F</li>
+                    <li class='list-group-item'>Low: {{city_weather.low_temperature}} ° F</li>
+                    <li class='list-group-item'>Humidity: {{city_weather.humidity}} %</li>
+                    <li class='list-group-item'>Wind Speed: {{city_weather.wind}} mph</li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <img src="{% static '/images/weather_map.jpg' %}" class='img-fluid center'>
+    This app retrieves data from the API at <a class='btn-link' href='https://openweathermap.org/current'>Open Weather Map.</a>
+
 </div>
 {% endblock %}
