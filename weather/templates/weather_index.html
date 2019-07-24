@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block page_content %}
+{% load staticfiles %}
+<title>
+    Weather Application
+</title>
+
+<div class='homepage container'>
+    <div class='row text1 no-margin'>
+        <div class='col-lg-5'>
+            <img src="{% static '/images/Pro.jpg' %}" class='img-fluid homeimage'>
+        </div>
+        <div class='col-lg-7 text-left my-auto'>
+            Developer<br/>
+            Engineer<br/>
+            Wilderness First Responder<br/>
+            Cycling and Beer Enthusiast<br/><br/><br/>
+            I'm Joe Pickert, and this is my website.<br/><br/>
+            Please take some time to explore my projects and personal information.<br/>
+            If you'd like to reach out, please <a class='btn-link' href="{% url 'contact' %}">contact me.</a> I'd love to hear from you!
+        </div>
+    </div>
+</div>
+{% endblock %}
