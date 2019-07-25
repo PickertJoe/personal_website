@@ -21,6 +21,7 @@ def weather_index(request):
         r = response.json()
         city_weather = {
             'city': city.name,
+            'image': city.image.url,
             'low_temperature': r['main']['temp_min'],
             'high_temperature': r['main']['temp_max'],
             'humidity': r['main']['humidity'],

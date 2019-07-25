@@ -14,7 +14,7 @@
         {% for city_weather in weather_data %}
         <div class='col-md-4'>
             <div class='card mb-2'>
-                <img class='card-img-top' src="{{city_weather.image.url}}" alt="Image">
+                <img class='card-img-top img-fluid' src={{city_weather.image}} alt="Image">
                 <div class='card-body'>
                     <h2 class='card-title'>{{ city_weather.city }}</h2>
                     <p class='card-text'>{{city_weather.description}}</p>
