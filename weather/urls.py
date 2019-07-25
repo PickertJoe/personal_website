@@ -5,5 +5,4 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.weather_index, name='weather_index'),
-
 ]
