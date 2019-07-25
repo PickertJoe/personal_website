@@ -1,0 +1,250 @@
+
+{% load staticfiles %}
+html  *{
+    font-family: "Times New Roman" !important;
+}
+
+body {
+    background-image: url("https://pickert-website-static.s3.us-east-2.amazonaws.com/snow-compressor.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+
+a{
+    color:#2A293E;
+}
+
+h1{
+    text-align: center !important;
+    font-size: 2.5em !important;
+
+}
+h2{
+    color:black;
+    font-size: 1.9em;
+    text-align: center !important;
+}
+
+h3{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.9em;
+    padding-top: 100px;
+}
+
+h4{
+    text-align: center;
+    font-size: 2.3em;
+    color:white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h5{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.1em;
+}
+.homepage{
+    color: white;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    background-size: contain;
+}
+
+.navbar.solid {
+  background-color: black;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+
+.blog-container {
+    outline: 2px solid black;
+}
+
+.big-link{
+    font-size: 1em !important;
+}
+
+.card-text{
+    color: white !important;
+    text-transform: capitalize;
+}
+
+.btn-link{
+    color:white;
+    font-size: 1em;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.homeimage{
+    padding-top: 1% !important;
+    text-align: center !important;
+    display:block;
+}
+
+.no-margin{
+    margin-bottom: 0px !important;
+}
+
+.btn-link2{
+    color:black;
+}
+.col-sm{
+    color: white !important;
+}
+
+.container span{
+    color:white;
+    text-transform: uppercase;
+    display: block;
+}
+
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.button1{
+    position: relative;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.card-text{
+    color:black !important;
+}
+
+.text1{
+    margin-top: 3%;
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+#weather-text{
+    margin-top: 3%;
+    font-size: 1em !important;
+    font-weight: 700;
+    color:black !important;
+    text-shadow: none !important;
+}
+
+.about-title{
+    margin-top: 3%;
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.text2{
+    margin-top: 25px;
+    font-size: 1.9em;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.text3{
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 0;
+    color:white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    animation: fadein forwards;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.blog-detail{
+    background-color: white !important;
+    font-size: 1.1em;
+}
+
+.project-detail {
+    background-color: white !important;
+    color: black;
+    font-size: 1.2em;
+    border: 2px solid black;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@viewport{
+    zoom:1.0;
+    width: extend-to-zoom;
+}
+
+
+.nav-link{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.6em;
+}
+
+.navbar-brand{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.9em;
+
+}
+
+.col-9{
+    background-color: #9F9C99;
+    border: 2px solid black;
+
+}
+
+.col-3{
+    background-color: #2A293E;
+    border: 2px solid black;
+    color: white;
+}
+
+.fill{
+    min-height: 100vh;
+    height: 100%;
+}
+
+
+/*
+Keyframes
+*/
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
