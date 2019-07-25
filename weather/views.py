@@ -1,12 +1,14 @@
 import requests
 from django.shortcuts import render
 from .models import City
+import os
 
 # Create your views here.
 
 
 def weather_index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=1442deb6d63d49a6d94e45200a09fea7'
+    API_KEY = os.environ.get('WEATHER_API')
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=' + API_KEY
 
     cities = City.objects.all()
 
@@ -15,8 +17,8 @@ def weather_index(request):
     for city in cities:
 
         # Makes the API call and interprets the result in JSON format
-        r = requests.get(url.format(city)).json()
-
+        response = requests.get(url.format(city))
+        r = response.json()
         city_weather = {
             'city': city.name,
             'low_temperature': r['main']['temp_min'],
