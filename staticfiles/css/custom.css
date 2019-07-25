@@ -73,6 +73,7 @@ p{
 
 .card-text{
     color: white !important;
+    text-transform: capitalize;
 }
 
 .btn-link{
@@ -135,9 +136,9 @@ p{
     animation-delay: 1s;
 }
 
-.weather-text{
+#weather-text{
     margin-top: 3%;
-    font-size: 1.5em;
+    font-size: 1em !important;
     font-weight: 700;
     color:black !important;
     text-shadow: none !important;

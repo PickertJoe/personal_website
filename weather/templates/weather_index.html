@@ -10,7 +10,7 @@
     <div class='text-center'>
         Check out the conditions in a few of the cities I'd most like to visit.
     </div>
-    <div class='row no-margin weather-text'>
+    <div class='row no-margin' id='weather-text'>
         {% for city_weather in weather_data %}
         <div class='col-md-4'>
             <div class='card mb-2'>
@@ -29,9 +29,9 @@
         </div>
         {% endfor %}
     </div>
-
-    <img src="{% static '/images/weather_map.jpg' %}" class='img-fluid center'>
+    <div class='text-center'>
+    <img src="{% static '/images/weather_map.jpg' %}" class='img-fluid'>
     This app retrieves data from the API at <a class='btn-link' href='https://openweathermap.org/current'>Open Weather Map.</a>
-
+</div>
 </div>
 {% endblock %}
