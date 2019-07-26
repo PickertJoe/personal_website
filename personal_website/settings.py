@@ -125,7 +125,7 @@ USE_L10N = True
 USE_TZ = True
 
 # When working in local development, disable the below settings
-"""
+
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
@@ -139,29 +139,37 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_URL = STATIC_URL + 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+#MEDIA_URL = STATIC_URL + 'media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
-"""
+
 # End settings disable
 
 # When working in local development, enable the settings below
 # Also, set Debug to True
 # Also, modify the designated settings in personal_website/urls.py and blog/urls.py
 # Revert all changes when ready to deploy
-
+"""
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
+"""
+
+# In base.html replace this line:
+# <link rel="stylesheet" href="{% static 'css/custom.css' %}" type='text/css' />
+# With this line:
+# <link rel="stylesheet" href="static/css/custom.css" type='text/css' />
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
