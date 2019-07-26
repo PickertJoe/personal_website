@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']
@@ -139,9 +139,9 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-#MEDIA_URL = STATIC_URL + 'media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+MEDIA_URL = STATIC_URL + 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
