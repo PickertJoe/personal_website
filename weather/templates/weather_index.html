@@ -20,10 +20,10 @@
                     <p class='card-text'>{{city_weather.description}}</p>
                 </div>
                 <ul class='list-group list-group-flush'>
-                    <li class='list-group-item'>High: {{city_weather.high_temperature}} ° F</li>
-                    <li class='list-group-item'>Low: {{city_weather.low_temperature}} ° F</li>
+                    <li class='list-group-item'>High: {{city_weather.high_temperature | floatformat:"0"}} ° F</li>
+                    <li class='list-group-item'>Low: {{city_weather.low_temperature | floatformat:"0"}} ° F</li>
                     <li class='list-group-item'>Humidity: {{city_weather.humidity}} %</li>
-                    <li class='list-group-item'>Wind Speed: {{city_weather.wind}} mph</li>
+                    <li class='list-group-item'>Wind Speed: {{city_weather.wind | floatformat:"0"}} mph</li>
                 </ul>
             </div>
         </div>

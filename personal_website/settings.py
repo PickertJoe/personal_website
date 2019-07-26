@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['pickertjoe.herokuapp.com', 'localhost', 'www.pickertjoe.com']
@@ -125,7 +125,7 @@ USE_L10N = True
 USE_TZ = True
 
 # When working in local development, disable the below settings
-
+"""
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
@@ -147,13 +147,21 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
-
+"""
 # End settings disable
 
 # When working in local development, enable the settings below
+# Also, set Debug to True
+# Also, modify the designated settings in personal_website/urls.py and blog/urls.py
+# Revert all changes when ready to deploy
 
-#STATIC_URL = '/staticfiles/'
-#STATIC_ROOT = 'static'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
