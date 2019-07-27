@@ -96,7 +96,6 @@ p{
 
 .card-text{
     color: white !important;
-    text-transform: capitalize;
 }
 
 .card-img-top {
@@ -107,6 +106,10 @@ p{
 
 .card-text{
     color:black !important;
+}
+
+.capitalize{
+    text-transform: capitalize !important;
 }
 
 .col-3{

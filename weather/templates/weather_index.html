@@ -17,7 +17,7 @@
                 <img class='card-img-top img-fluid' src={{city_weather.image}} alt="Image">
                 <div class='card-body'>
                     <h2 class='card-title'>{{ city_weather.city }}</h2>
-                    <p class='card-text'>{{city_weather.description}}</p>
+                    <p class='card-text capitalize'>{{city_weather.description}}</p>
                 </div>
                 <ul class='list-group list-group-flush'>
                     <li class='list-group-item'>High: {{city_weather.high_temperature | floatformat:"0"}} ° F</li>
