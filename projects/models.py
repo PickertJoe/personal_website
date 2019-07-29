@@ -10,6 +10,7 @@ class Project(models.Model):
     technology = models.CharField(max_length=200)
     image = models.ImageField(upload_to='images/')
     link = models.URLField(default='')
+    app_link = models.URLField(null=True, blank=True)
 
     def __str__(self):
         return self.title

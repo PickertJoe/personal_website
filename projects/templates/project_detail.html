@@ -16,6 +16,9 @@
         <br>
         <h5>Technology used:</h5>
         <p>{{ project.technology }}</p>
+        {% if project.app_link %}
+        <a href="{{project.app_link}}">Click here to visit the app!</a>
+        {% endif %}
         <p class='text-center'>*Click image for link to source code*</p>
     </div>
 </div>
