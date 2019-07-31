@@ -6,7 +6,7 @@ from projects.models import Project
 
 def project_index(request):
     """Provides a snippet of information for each project"""
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('order_id')
     context = {'projects': projects}
     return render(request, 'project_index.html', context)
 
