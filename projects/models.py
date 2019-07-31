@@ -11,6 +11,7 @@ class Project(models.Model):
     image = models.ImageField(upload_to='images/')
     link = models.URLField(default='')
     app_link = models.URLField(null=True, blank=True)
+    order_id = models.IntegerField(default=99)
 
     def __str__(self):
         return self.title
