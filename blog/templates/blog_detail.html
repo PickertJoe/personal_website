@@ -19,25 +19,6 @@
                 {% endfor %}
             </small>
             <p class='content-markdown'>{{ post.body  }}</p>
-            <h2>Leave a comment:</h2>
-            <form action='/blog/{{ post.pk }}/' method='post'>
-                {% csrf_token %}
-                <div class='form-group'>
-                    {{ form.author }}
-                </div>
-                <div class='form-group'>
-                    {{ form.body }}
-                </div>
-                <button type='submit' class='btn btn-primary'>Submit</button>
-            </form>
-            <h2>Comments:</h2>
-            {% for comment in comment %}
-            <p>
-                On {{comment.created_on.date}}&nbsp;
-                <b>{{comment.author}}</b>wrote:
-            </p>
-            <p>{{comment.body}}</p>
-            {% endfor %}
         </div>
         <div class="col-3">
         <img src="{% static '/images/Pro.jpg' %}" class='img-fluid'>
