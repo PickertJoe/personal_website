@@ -5,4 +5,4 @@ This site was built through Python using the Django framework and is hosted on t
 
 All HTML and CSS features were coded from scratch and leaned heavily on the Bootstrap framework to create a responsive site compatible with a wide range of screen resolutions.
 
-June 5, 2021: This app was converted to a static website that now lives at old.joepickert.dev
+June 5, 2021: This app was converted to a static website that now lives at [old.joepickert.dev](https://old.joepickert.dev)
